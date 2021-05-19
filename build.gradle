@@ -1,12 +1,12 @@
 plugins {
-    id "org.jetbrains.intellij" version "0.4.1"
+    id "org.jetbrains.intellij" version "0.7.3"
 }
 
 repositories {
     mavenCentral()
 }
 
-version = '0.1.1'
+version = '0.0.1'
 
 allprojects {
     apply plugin: 'java'
@@ -16,12 +16,13 @@ allprojects {
 
     apply plugin: 'org.jetbrains.intellij'
     intellij {
-        version 'IC-2018.3.3'
-        pluginName 'python-flake8'
+        version '2021.1.1'
+        type 'PC'
+        pluginName 'python-databricks-magic'
         updateSinceUntilBuild false
 
         //plugin dependencies, see https://github.com/JetBrains/gradle-intellij-plugin
-        plugins 'PythonCore:2018.3.183.5153.38'
+        plugins 'PythonCore:211.7142.45'
     }
 
     publishPlugin {

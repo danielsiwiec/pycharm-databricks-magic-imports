@@ -4,12 +4,12 @@
 -->
 
 <idea-plugin>
-    <id>python-flake8</id>
-    <name>Flake8 support</name>
-    <version>0.1.1</version>
+    <id>python-databricks-magic</id>
+    <name>Databricks Magic Imports Support</name>
+    <version>0.0.1</version>
     <category>Tool support</category>
 
-    <vendor email="mail@plugin-dev.com" url="https://www.plugin-dev.com">Joachim Ansorg</vendor>
+    <vendor email="daniel.siwiec@gmail.com" url="https://dansiwiec.com">Dan Siwiec</vendor>
 
     <description><![CDATA[
       This plugin adds support for flake8's markers <em># noqa</em> and <em># flake8: noqa</em>.
@@ -23,7 +23,7 @@
     <!-- Depend on the Python plugin. Also works in the different editions of PyCharm. -->
     <depends>com.intellij.modules.python</depends>
 
-    <idea-version since-build="183.0"/>
+    <idea-version since-build="211.7142.13"/>
 
     <extensions defaultExtensionNs="com.intellij">
         <lang.inspectionSuppressor language="Python" implementationClass="webinar.FlakeInspectionSuppressor" />
